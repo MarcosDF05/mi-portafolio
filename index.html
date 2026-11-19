@@ -1,141 +1,163 @@
 <!doctype html>
-<html class="no-js" lang="es">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marcos Díaz - Portafolio</title>
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111411">
+  <meta name="description" content="Portfolio de Marcos Díaz Fernández: desarrollo de software, datos e innovación biomédica.">
+  <title>Marcos Díaz Fernández — Software & Biomedical Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="header">
-  <div class="container">
-    <h1>Marcos Díaz Fernández</h1>
-    <p>Programador y Desarrollador Web</p>
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html">Acerca de mi</a></li>
-        <li><a href="proyectos.html">Mis Proyectos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="wordmark" href="#inicio" aria-label="Marcos Díaz Fernández, inicio">M<span>/</span>D<span class="wordmark-dot">.</span></a>
+    <button class="menu-toggle" aria-label="Abrir navegación" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#perfil">Perfil</a><a href="#experiencia">Experiencia</a><a href="#proyectos">Proyectos</a><a href="#stack">Stack</a>
+      <a class="nav-contact" href="#contacto">Hablemos <span>↗</span></a>
     </nav>
-  </div>
-</header>
+  </header>
 
-<section id="about" class="section">
-  <div class="container">
-    <h2>Acerca de mí</h2>
-    <img src="assets/images/tu-foto.jpg" alt="Tu Foto de Perfil" class="profile-photo">
-
-    <p>
-      <strong>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</strong> con una sólida base técnica y un profundo interés en proyectos con impacto social y educativo. Mi formación me ha dotado de una gran capacidad de adaptación, lo que me permite integrarme rápidamente en diferentes entornos de trabajo y contribuir con mi mejor esfuerzo.
-    </p>
-    <p>
-      Soy una persona proactiva, orientada a la colaboración y con un gran entusiasmo por el aprendizaje. Busco activamente una oportunidad laboral que me permita aplicar y expandir mis habilidades en el desarrollo de software, al mismo tiempo que adquiero una valiosa experiencia en un entorno profesional. Mi objetivo es aportar valor al equipo, mientras continúo creciendo y desarrollándome como profesional.
-    </p>
-
-    <div class="skills-showcase">
-      <h3>Tecnologías y Habilidades</h3>
-      <div class="skills-grid">
-
-        <div class="skill-category-group">
-          <h4 class="category-title">Lenguajes de Programación y Frameworks</h4>
-          <div class="skills-subgrid">
-            <div class="skill-card">
-              <i class="fab fa-java"></i>
-              <p>Java</p>
-              <div class="skill-bar-container">
-                <div class="skill-bar" data-level="80%"></div>
-              </div>
-            </div>
-            <div class="skill-card">
-              <i class="fab fa-python"></i>
-              <p>Python</p>
-              <div class="skill-bar-container">
-                <div class="skill-bar" data-level="55%"></div>
-              </div>
-            </div>
-            <div class="skill-card">
-              <i class="fab fa-html5"></i>
-              <p>HTML5</p>
-              <div class="skill-bar-container">
-                <div class="skill-bar" data-level="90%"></div>
-              </div>
-            </div>
-            <div class="skill-card">
-              <i class="fab fa-css3-alt"></i>
-              <p>CSS3</p>
-              <div class="skill-bar-container">
-                <div class="skill-bar" data-level="80%"></div>
-              </div>
-            </div>
-            <div class="skill-card">
-              <i class="fab fa-js"></i>
-              <p>JavaScript</p>
-              <div class="skill-bar-container">
-                <div class="skill-bar" data-level="40%"></div>
-              </div>
-            </div>
-            <div class="skill-card">
-              <i class="fas fa-cubes"></i>
-              <p>Reflex</p>
-              <div class="skill-bar-container">
-                <div class="skill-bar" data-level="45%"></div>
-              </div>
-            </div>
+  <main>
+    <section class="hero section-wrap" id="inicio">
+      <div class="hero-meta"><span class="status-dot"></span> DISPONIBLE PARA NUEVOS RETOS <span class="meta-line"></span> GETAFE, MADRID</div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="overline">SOFTWARE DEVELOPER <span>×</span> BIOMEDICAL RESEARCH</p>
+          <h1>Construyo tecnología<br>para <em>mejorar</em> lo que<br>importa<span class="lime">.</span></h1>
+          <p class="hero-intro">Soy Marcos, desarrollador de aplicaciones con experiencia en investigación biomédica. Conecto software, datos y necesidades clínicas para convertir procesos complejos en herramientas útiles.</p>
+          <div class="hero-actions">
+            <a class="btn btn-lime" href="#proyectos">Explorar proyectos <span>↘</span></a>
+            <a class="text-link" href="#contacto">Contactar <span>↗</span></a>
           </div>
         </div>
-
-        <div class="skill-category-group">
-          <h4 class="category-title">Bases de Datos</h4>
-          <div class="skills-subgrid">
-            <div class="skill-card">
-              <i class="fas fa-database"></i>
-              <p>MySQL</p>
-              <div class="skill-bar-container">
-                <div class="skill-bar" data-level="90%"></div>
-              </div>
-            </div>
-            <div class="skill-card">
-              <i class="fas fa-database"></i>
-              <p>SQL Server</p>
-              <div class="skill-bar-container">
-                <div class="skill-bar" data-level="75%"></div>
-              </div>
-            </div>
-            <div class="skill-card">
-              <i class="fas fa-database"></i>
-              <p>MongoDB</p>
-              <div class="skill-bar-container">
-                <div class="skill-bar" data-level="50%"></div>
-              </div>
-            </div>
-            <div class="skill-card">
-              <i class="fas fa-database"></i>
-              <p>PostgreSQL</p>
-              <div class="skill-bar-container">
-                <div class="skill-bar" data-level="45%"></div>
-              </div>
-            </div>
-            <div class="skill-card">
-              <i class="fas fa-database"></i>
-              <p>SQLite</p>
-              <div class="skill-bar-container">
-                <div class="skill-bar" data-level="70%"></div>
-              </div>
-            </div>
-          </div>
+        <div class="hero-art" aria-label="Composición gráfica abstracta que representa datos y tecnología">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="art-cross">+</div><div class="art-label label-top">DATA / 01</div>
+          <div class="art-core"><span>MD</span><i></i></div>
+          <div class="art-label label-bottom">BUILDING WITH PURPOSE</div>
+          <div class="art-coordinate">40°18' N<br>3°43' W</div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+      <div class="hero-bottom"><span>SCROLL PARA DESCUBRIR</span><span class="scroll-line"></span><span class="mono">01 — 05</span></div>
+    </section>
 
-<footer class="footer">
-  <div class="container">
-    <p>&copy; 2025 Marcos Díaz. Todos los derechos reservados.</p>
-  </div>
-</footer>
-<script src="scripts/app.js"></script>
+    <section class="intro section-wrap" id="perfil">
+      <div class="section-index"><span>01</span> / PERFIL</div>
+      <div class="intro-content reveal">
+        <p class="eyebrow">UNA MIRADA ENTRE DOS MUNDOS</p>
+        <h2>Del código al contexto.<br><span class="muted">De los datos a las decisiones.</span></h2>
+        <div class="intro-columns">
+          <p class="large-copy">Mi trabajo vive en el punto donde la tecnología se encuentra con problemas reales. Actualmente desarrollo soluciones digitales para investigación nefrológica, trabajando con aplicaciones web, bases de datos e integración de información clínica.</p>
+          <div class="intro-aside"><p>Formación en Desarrollo de Aplicaciones Multiplataforma y experiencia en entornos hospitalarios. Me interesa crear herramientas claras, mantenibles y pensadas para las personas que las utilizan.</p><div class="mini-tags"><span>Software clínico</span><span>Data engineering</span><span>Full-stack</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience section-wrap" id="experiencia">
+      <div class="section-index"><span>02</span> / TRAYECTORIA</div>
+      <div class="section-heading reveal"><p class="eyebrow">EXPERIENCIA PROFESIONAL</p><h2>Aprender haciendo.<br><span class="muted">Aportar construyendo.</span></h2></div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-date">FEB 2026 — ACTUALIDAD</div>
+          <div class="timeline-main"><div class="timeline-title-row"><h3>Técnico de Grado Superior<br><span>Proyecto de investigación RICORS</span></h3><span class="timeline-mark">↗</span></div>
+            <p class="company">Fundación de Investigación Biomédica · H.U. La Princesa</p>
+            <p>Segunda etapa en la Unidad de Investigación de Nefrología, vinculada al proyecto RICORS (ISCIII-RD24/0004/0028).</p>
+            <ul><li>Desarrollo de una plataforma para integrar datos de distintas fuentes —CMBD, REMER y Laboratorio— orientada al manejo de la fragilidad en pacientes renales.</li><li>Desarrollo de una web de interacción paciente-médico para evaluar fragilidad y sarcopenia.</li><li>Elaboración y mantenimiento de bases de datos del Servicio de Nefrología.</li></ul>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-date">JUL 2025 — DIC 2025</div>
+          <div class="timeline-main"><div class="timeline-title-row"><h3>Técnico de Investigación<br><span>Desarrollo de software</span></h3><span class="timeline-mark">↗</span></div>
+            <p class="company">Fundación de Investigación Biomédica · H.U. La Princesa</p>
+            <p>Primera etapa de colaboración en la Unidad de Investigación de Nefrología.</p>
+            <ul><li>Diseño y programación de aplicaciones de escritorio y móviles para la detección precoz de nefropatía diabética.</li><li>Gestión y optimización de consultas SQL y MySQL para datos clínicos.</li><li>Integración de aplicaciones propias con sistemas de información hospitalaria (HCIS).</li><li>Creación de herramientas interactivas para evaluar fragilidad y sarcopenia.</li></ul>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-date">MAR 2025 — JUN 2025</div>
+          <div class="timeline-main"><div class="timeline-title-row"><h3>Desarrollador de aplicaciones<br><span>Prácticas FCT</span></h3><span class="timeline-mark">↗</span></div>
+            <p class="company">Hospital Universitario Puerta de Hierro Majadahonda</p>
+            <ul><li>Colaboración en el desarrollo de una aplicación móvil para el departamento de Investigación de Enfermería.</li><li>Apoyo en la gestión de bases de datos y depuración de errores en producción.</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects section-wrap" id="proyectos">
+      <div class="section-index"><span>03</span> / TRABAJO SELECCIONADO</div>
+      <div class="section-heading projects-heading reveal"><div><p class="eyebrow">PROYECTOS</p><h2>Ideas convertidas<br>en <span class="muted">producto.</span></h2></div><p class="heading-note">Una selección de desarrollos profesionales y académicos donde la tecnología resuelve necesidades concretas.</p></div>
+
+      <article class="featured-project reveal">
+        <div class="project-topline"><span>01 / PROYECTO DESTACADO</span><span>INVESTIGACIÓN NEFROLÓGICA</span></div>
+        <div class="featured-head">
+          <div><p class="eyebrow">PLATAFORMA WEB MULTICÉNTRICA</p><h3>FRAIL-DP <span>| ERC 360°</span></h3></div>
+          <p class="featured-summary">Una plataforma a medida para el estudio de fragilidad en pacientes en diálisis peritoneal, con portal de paciente y área privada de investigadores.</p>
+        </div>
+        <div class="project-stats"><div><strong>20</strong><span>Hospitales en la red objetivo</span></div><div><strong>02</strong><span>Experiencias de usuario</span></div><div><strong>360°</strong><span>Evaluación clínica</span></div></div>
+        <div class="gallery" aria-label="Galería del proyecto FRAIL-DP">
+          <div class="gallery-stage">
+            <button class="gallery-image-button" type="button" aria-label="Ampliar imagen actual">
+              <img class="gallery-image" src="assets/images/frail-dp-panel-editorial.jpg" alt="Panel privado de investigadores FRAIL-DP">
+              <span class="gallery-zoom-hint">AMPLIAR ↗</span>
+            </button>
+            <button class="gallery-arrow gallery-prev" type="button" aria-label="Imagen anterior">←</button>
+            <button class="gallery-arrow gallery-next" type="button" aria-label="Imagen siguiente">→</button>
+          </div>
+          <div class="gallery-footer">
+            <div><span class="gallery-count">01 / 03</span><strong class="gallery-caption">ÁREA DE INVESTIGADORES</strong></div>
+            <div class="gallery-dots" aria-label="Seleccionar imagen">
+              <button type="button" class="gallery-dot active" aria-label="Ver panel de investigadores"></button>
+              <button type="button" class="gallery-dot" aria-label="Ver portal del paciente"></button>
+              <button type="button" class="gallery-dot" aria-label="Ver arquitectura"></button>
+            </div>
+            <span class="gallery-instruction">PINCHA PARA AMPLIAR · USA LAS FLECHAS PARA NAVEGAR</span>
+          </div>
+        </div>
+        <div class="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Galería ampliada FRAIL-DP" hidden>
+          <button class="lightbox-close" type="button" aria-label="Cerrar galería">×</button>
+          <button class="lightbox-arrow lightbox-prev" type="button" aria-label="Imagen anterior">←</button>
+          <figure><img class="lightbox-image" src="assets/images/frail-dp-panel-editorial.jpg" alt="Panel privado de investigadores FRAIL-DP"><figcaption class="lightbox-caption">ÁREA DE INVESTIGADORES</figcaption></figure>
+          <button class="lightbox-arrow lightbox-next" type="button" aria-label="Imagen siguiente">→</button>
+          <span class="lightbox-count">01 / 03</span>
+        </div>
+        <div class="project-details">
+          <div><p class="eyebrow">QUÉ PERMITE HACER</p><ul class="feature-list"><li>Portal educativo para pacientes y contenidos sobre evaluación 360°.</li><li>Autenticación JWT, control de roles y panel restringido.</li><li>Gestor documental para protocolos, publicaciones y recursos.</li><li>Flujos guiados para escalas FRAIL, SPPB, MIS y dinamómetro.</li><li>Administración de centros e investigadores, notificaciones y seguimiento.</li></ul></div>
+          <div><p class="eyebrow">TECNOLOGÍAS</p><div class="tech-cloud"><span>HTML5</span><span>JavaScript SPA</span><span>Tailwind CSS</span><span>Node.js</span><span>Express</span><span>MySQL 8</span><span>JWT</span><span>bcrypt</span></div><p class="project-footnote">Despliegue progresivo: piloto inicial en 5 centros y escalado previsto hasta una red de 20 hospitales.</p></div>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project-card reveal"><div class="project-card-number">02 <span>ACADEMIA</span></div><div class="project-card-icon">✳</div><h3>Planificador de eventos<br>para mascotas</h3><p>Aplicación móvil nativa Android para la planificación de eventos, desarrollada en Java como Trabajo de Fin de Grado en equipo.</p><div class="tech-cloud"><span>Android Studio</span><span>Java</span><span>XML</span></div><p class="project-disclaimer">Proyecto académico · Aplicación no publicada en tiendas.</p></article>
+        <article class="project-card project-card-light reveal"><div class="project-card-number">03 <span>ENTORNO CLÍNICO</span></div><div class="project-card-icon">⌁</div><h3>Visualización de<br>datos clínicos</h3><p>Aplicación web para el entorno de Nefrología, con gestión de información mediante MySQL e interfaz orientada a facilitar la consulta y organización de datos clínicos.</p><div class="tech-cloud"><span>Python</span><span>Reflex</span><span>MySQL</span><span>CSS</span></div><p class="project-disclaimer">Proyecto profesional · Código y capturas no publicables por confidencialidad.</p></article>
+      </div>
+    </section>
+
+    <section class="stack section-wrap" id="stack">
+      <div class="section-index"><span>04</span> / HERRAMIENTAS</div>
+      <div class="section-heading reveal"><p class="eyebrow">STACK & CONOCIMIENTOS</p><h2>Las herramientas<br>de mi <span class="muted">día a día.</span></h2></div>
+      <div class="stack-layout">
+        <div class="stack-group reveal"><span class="stack-number">01</span><div><h3>Desarrollo</h3><p>Java · Python · JavaScript · PHP · HTML5 · CSS3 · Django · Reflex · Android</p></div></div>
+        <div class="stack-group reveal"><span class="stack-number">02</span><div><h3>Datos</h3><p>MySQL · SQL Server · PostgreSQL · SQLite · MongoDB · BigQuery · SQLModel · Pandas</p></div></div>
+        <div class="stack-group reveal"><span class="stack-number">03</span><div><h3>Infraestructura & herramientas</h3><p>Docker · Linux · Windows · macOS · Git · GitHub · Visual Studio Code · Android Studio</p></div></div>
+        <div class="stack-group reveal"><span class="stack-number">04</span><div><h3>Otras plataformas</h3><p>Looker Studio · Salesforce · Odoo · WordPress · Wix · Excel · R</p></div></div>
+      </div>
+      <div class="education-strip reveal"><div><p class="eyebrow">FORMACIÓN</p><h3>Desarrollo de Aplicaciones Multiplataforma</h3><p>Grado Superior · MEDAC Fuenlabrada · 2023—2025</p></div><div class="languages"><p class="eyebrow">IDIOMAS</p><p><b>ES</b> Español nativo <span>/</span> <b>EN</b> Inglés B2 <span>/</span> <b>FR</b> Francés A2</p></div></div>
+    </section>
+
+    <section class="contact section-wrap" id="contacto">
+      <div class="section-index"><span>05</span> / CONTACTO</div>
+      <div class="contact-panel reveal">
+        <div><p class="eyebrow">¿TIENES UN PROYECTO EN MENTE?</p><h2>Hagamos algo<br><em>que importe.</em></h2><p class="contact-intro">Estoy abierto a nuevas oportunidades y colaboraciones en desarrollo de software, datos e innovación sanitaria.</p></div>
+        <div class="contact-links"><a href="mailto:Marcosdife05@gmail.com"><span>EMAIL</span><b>Marcosdife05@gmail.com</b><i>↗</i></a><a href="tel:+34699592444"><span>TELÉFONO</span><b>+34 699 592 444</b><i>↗</i></a><a href="https://www.linkedin.com/in/marcos-diaz-fernandez-272482298/" target="_blank" rel="noopener noreferrer"><span>LINKEDIN</span><b>Conectemos profesionalmente</b><i>↗</i></a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer section-wrap"><a class="wordmark" href="#inicio">M<span>/</span>D<span class="wordmark-dot">.</span></a><p>Diseñado y desarrollado por Marcos Díaz Fernández.</p><a href="#inicio">VOLVER ARRIBA ↑</a><span>© <span id="year"></span></span></footer>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
